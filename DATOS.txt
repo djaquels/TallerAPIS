@@ -1,0 +1,36 @@
+INSERT INTO sucursales(nombre,telefono)
+VALUES ('Col Del Valle','55512356'),
+('Polanco 22', '55464654'),
+('Coyoacan Distrito','4564654'),
+('Industrial Vallejo','54646546'),
+('Guadalajara Jal.','3356454'),
+('León GTO','54646'),
+('Michoacan','465464646'),
+('New York , Brooklyn 35','+4564846864'),
+('Tokyo Arigato','+4654654654'),
+('Afganistan','+645464654')
+
+
+INSERT INTO catalogo_refrescos(nombre,costo,pais_origen)
+VALUES ('Spiffy',45.23,'USA'),
+('Canada Dry',100.25,'CAN'),
+('Dr Pepper',56.23,'USA'),
+('Buho Soda',87.01,'MXN'),
+('Chaparritas',500.50,'MXN',),
+('Lyn',78.23,'ARA'),
+('Chan',9.23,'CTA'),
+('Hatakosen Ramune',15.23,'JAP'),
+('Milkis',105.23,'COR')
+
+INSERT INTO stock(id_sucursal,id_refresco,cantidad)
+VALUES (1,2,56),
+(1,4,89),
+(2,6,78),
+(3,6,6),
+(5,7,20),
+(9,9,45),
+(8,3,45),
+(7,10,56),
+(4,4,40),
+(10,11,78),
+(6,2,150)

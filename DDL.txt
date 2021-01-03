@@ -1,0 +1,20 @@
+CREATE TABLE sucursales(
+  id serial not null constraint pk_sucursales primary key,
+  nombre varchar(50),
+  telefono varchar(20)
+)
+CREATE TABLE catalogo_refrescos(
+ id serial not null constraint pk_refrescos primary key,
+ nombre varchar(50),
+ costo numeric(10,2),
+ pais_origen varchar(3)
+)
+CREATE TABLE stock(
+ id serial not null constraint pk_stock primary key,
+ id_sucursal int,
+ id_refresco int,
+ cantidad int,
+ FOREIGN KEY(id_sucursal) REFERENCES sucursales(id),
+ FOREIGN KEY(id_refresco) REFERENCES catalogo_refrescos(id)
+
+)
